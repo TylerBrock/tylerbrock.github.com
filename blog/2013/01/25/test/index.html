@@ -122,7 +122,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://TylerBrock.github.com/blog/2013/01/25/test/" data-via="" data-counturl="http://TylerBrock.github.com/blog/2013/01/25/test/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://TylerBrock.github.com/blog/2013/01/25/test/" data-via="TylerBrock" data-counturl="http://TylerBrock.github.com/blog/2013/01/25/test/" >Tweet</a>
   
   
   
@@ -171,7 +171,7 @@
 
         github.showRepos({
             user: 'TylerBrock',
-            count: 0,
+            count: 1,
             skip_forks: true,
             target: '#gh_repos'
         });
@@ -181,7 +181,32 @@
 </section>
 
 
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("TylerBrock", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/TylerBrock" class="twitter-follow-button" data-show-count="false">Follow @TylerBrock</a>
+  
+</section>
 
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/tylerbrock?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 
